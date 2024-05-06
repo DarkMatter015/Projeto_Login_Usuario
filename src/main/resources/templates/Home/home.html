@@ -18,13 +18,13 @@
         <button class="btn btn-primary" id="listar">Listar Usuários</button>
     </div>
 <script>
-    ${"#listar"}.click(function(){
+    $("#listar").click(function(){
         $.ajax({
             url: "/listar",
             method: "GET",
             data: {},
             success: function(resposta){
-                ${"#lista"}.html(resposta);
+                $("#lista").html(resposta);
             },
             error: function(){
                 alert("deu ruim");
